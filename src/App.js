@@ -5,13 +5,14 @@ import MovieDetails from './pages/MovieDetails';
 import NewMovie from './pages/NewMovie';
 import EditMovie from './pages/EditMovie';
 import NotFound from './pages/NotFound';
+import Header from './components/Header';
+import './App.css'
 
 class App extends React.Component {
   render() {
     return (
       <BrowserRouter>
-        <div>Movie Card Library CRUD</div>
-        <Link to="/movies/new">ADICIONAR CARTÃO</Link>
+        <Header />
         <Switch>
           <Route exact path="/" component={ MovieList } />
           <Route exact path="/movies/new" component={ NewMovie } />

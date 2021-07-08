@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import MovieCard from '../components/MovieCard';
 import * as movieAPI from '../services/movieAPI';
 import Loading from '../components/Loading';
+import './MovieList.css';
 
 class MovieList extends Component {
   constructor() {
@@ -32,7 +33,7 @@ class MovieList extends Component {
       return <Loading />;
     }
     return (
-      <div data-testid="movie-list">
+      <div className="movie-list" data-testid="movie-list">
         {movies.map((movie) => <MovieCard key={ movie.title } movie={ movie } />)}
       </div>
     );
