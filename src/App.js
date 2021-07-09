@@ -12,7 +12,7 @@ class App extends React.Component {
   render() {
     return (
       <BrowserRouter>
-        <Header />
+        <Header className="oi"/>
         <Switch>
           <Route exact path="/" component={ MovieList } />
           <Route exact path="/movies/new" component={ NewMovie } />

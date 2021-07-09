@@ -28,8 +28,8 @@ export const getMovies = () => (
   })
 );
 
-export const getMovie = (movieId) => {
-  const movie = readMovies().find((mov) => mov.id === parseInt(movieId, 10));
+export const getMovie = (movieName) => {
+  const movie = readMovies().find((mov) => mov.title.toLowerCase() === movieName.toLowerCase());
   return new Promise((resolve) => {
     simulateRequest(movie)(resolve);
   });
@@ -59,9 +59,9 @@ export const createMovie = (movieData) => (
   })
 );
 
-export const deleteMovie = (movieId) => {
+export const deleteMovie = (movieName) => {
   let movies = readMovies();
-  movies = movies.filter((movie) => movie.id !== parseInt(movieId, 10));
+  movies = movies.filter((movie) => movie.title.toLowerCase() !== movieName.toLowerCase());
   saveMovies(movies);
 
   return new Promise((resolve) => {

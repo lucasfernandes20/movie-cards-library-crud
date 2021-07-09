@@ -27,16 +27,16 @@ class MovieDetails extends Component {
     });
   }
 
-  removeMovie = (id) => {
+  removeMovie = (title) => {
     const { deleteMovie } = movieAPI;
-    deleteMovie(id);
+    deleteMovie(title);
   }
 
   render() {
     // Change the condition to check the state
     // if (true) return <Loading />;
     const { movie } = this.state;
-    const { title, storyline, imagePath, genre, rating, subtitle, id } = movie;
+    const { title, storyline, imagePath, genre, rating, subtitle } = movie;
     const { load } = this.state;
 
     if (load) {
@@ -44,15 +44,15 @@ class MovieDetails extends Component {
     }
     return (
       <div data-testid="movie-details">
-        <img alt="Movie Cover" src={ `../${imagePath}` } />
+        <img alt="Movie Cover" src={imagePath} />
         <h4>{ `Title: ${title}` }</h4>
         <p>{ `Subtitle: ${subtitle}` }</p>
         <p>{ `Storyline: ${storyline}` }</p>
         <p>{ `Genre: ${genre}` }</p>
         <p>{ `Rating: ${rating}` }</p>
-        <Link to={ `/movies/${id}/edit` }>EDITAR</Link>
+        <Link to={ `/movies/${title}/edit` }>EDITAR</Link>
         <Link to="/">VOLTAR</Link>
-        <Link onClick={ () => this.removeMovie(id) } to="/">DELETAR</Link>
+        <Link onClick={ () => this.removeMovie(title) } to="/">DELETAR</Link>
       </div>
     );
   }
