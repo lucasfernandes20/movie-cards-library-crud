@@ -6,6 +6,7 @@ import NewMovie from './pages/NewMovie';
 import EditMovie from './pages/EditMovie';
 import NotFound from './pages/NotFound';
 import Header from './components/Header';
+import Footer from './components/Footer';
 import './App.css'
 
 class App extends React.Component {
@@ -20,6 +21,7 @@ class App extends React.Component {
           <Route exact path="/movies/:id" component={ MovieDetails } />
           <Route path="*" component={ NotFound } />
         </Switch>
+        <Footer />
       </BrowserRouter>
     );
   }
