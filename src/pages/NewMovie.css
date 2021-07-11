@@ -3,7 +3,7 @@
 .form-new-movie {
   height: 70vh;
   background-image: url("./image.jpg");
-  height: 80vh;
+  height: 85vh;
   width: auto ;
   background-repeat: no-repeat;
   display: flex;
@@ -56,4 +56,17 @@
  border:none;	
  outline:none;
  border-bottom:1px solid #e74c3c;	
+}
+
+.form-button {
+  background-color: rgb(102, 0, 0);
+  color: white;
+  padding: 5px;
+  border-color: rgb(255, 144, 0);
+  border-radius: 40px;
+}
+
+.form-button:hover {
+  cursor: pointer;
+  opacity: 0.6;
 }

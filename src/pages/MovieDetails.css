@@ -1,0 +1,75 @@
+.details-content {
+  display: flex;
+  justify-content: space-between;
+  height: 85vh;
+}
+
+.image-hero {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
+}
+
+.img-content {
+  order: 1;
+  width: 80%; 
+  position: relative;
+}
+
+.fade-img {
+  width: 100%;
+  position: absolute;
+  height: 100%;
+  background: linear-gradient(88deg, rgb(0, 0, 0), rgba(255, 255, 255, 0.1));
+  z-index: 0;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.info-details {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  padding: 0 40px 20px 30px ;
+  background-color: black;
+  justify-content: space-evenly;
+}
+
+.title-detail {
+  color: white;
+  font-size: 40px;
+}
+
+.subtitle-detail {
+  color: white;
+  font-size: 20px;
+}
+
+.storyline-detail {
+  color: white;
+}
+
+.genre-detail {
+  color: white;
+}
+
+.rating-detail {
+  color: white;
+}
+
+.buttons-detail {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.edit-btn, .back-btn, .rm-btn {
+  background-color: rgb(102, 0, 0);
+  color: white;
+  padding: 5px;
+  border-radius: 40px;
+  text-decoration: none;
+  box-shadow: 1px 1px 2px rgb(255, 144, 0);
+}
