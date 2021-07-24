@@ -1,0 +1,16 @@
+.not-found {
+  display: flex;
+  height: calc(90vh - 40px);
+  justify-content: space-evenly;
+  flex-direction: column;
+  align-items: center;
+}
+
+.not-found h2 {
+  font-size: 50px;
+  color: white;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #000;
+  text-shadow: 3px 3px rgb(95, 2, 31);
+
+}

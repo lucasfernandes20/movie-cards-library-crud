@@ -13,6 +13,7 @@ class App extends React.Component {
   render() {
     return (
       <BrowserRouter>
+        <div class='Moises'>
         <Header className="oi"/>
         <Switch>
           <Route exact path="/" component={ MovieList } />
@@ -21,6 +22,7 @@ class App extends React.Component {
           <Route exact path="/movies/:id" component={ MovieDetails } />
           <Route path="*" component={ NotFound } />
         </Switch>
+        </div>
         <Footer />
       </BrowserRouter>
     );
