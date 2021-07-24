@@ -4,6 +4,7 @@ import PropTypes from 'prop-types';
 import Loading from '../components/Loading';
 import { MovieForm } from '../components';
 import * as movieAPI from '../services/movieAPI';
+import './EditMovie.css';
 
 class EditMovie extends Component {
   constructor(props) {
@@ -49,7 +50,7 @@ class EditMovie extends Component {
     }
 
     return (
-      <div data-testid="edit-movie">
+      <div className="edit-content" data-testid="edit-movie">
         <MovieForm movie={ movie } onSubmit={ this.handleSubmit } />
       </div>
     );

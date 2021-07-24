@@ -1,4 +1,7 @@
 body {
-  background-color: rgb(27, 27, 27);
+  /* background-color: rgb(27, 27, 27); */
+  background-image: url('https://wallpaper.dog/large/5505750.jpg');
+  background-repeat: no-repeat;
   box-sizing: border-box;
 }
+
