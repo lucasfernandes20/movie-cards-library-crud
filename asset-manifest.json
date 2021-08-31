@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/app-toot-name/static/css/main.496ed9bb.chunk.css",
+    "main.js": "/app-toot-name/static/js/main.cf44d7bd.chunk.js",
+    "main.js.map": "/app-toot-name/static/js/main.cf44d7bd.chunk.js.map",
+    "runtime-main.js": "/app-toot-name/static/js/runtime-main.fb5cccab.js",
+    "runtime-main.js.map": "/app-toot-name/static/js/runtime-main.fb5cccab.js.map",
+    "static/js/2.701f6da9.chunk.js": "/app-toot-name/static/js/2.701f6da9.chunk.js",
+    "static/js/2.701f6da9.chunk.js.map": "/app-toot-name/static/js/2.701f6da9.chunk.js.map",
+    "index.html": "/app-toot-name/index.html",
+    "precache-manifest.9847e80104fb5955a35b567a1a355838.js": "/app-toot-name/precache-manifest.9847e80104fb5955a35b567a1a355838.js",
+    "service-worker.js": "/app-toot-name/service-worker.js",
+    "static/css/main.496ed9bb.chunk.css.map": "/app-toot-name/static/css/main.496ed9bb.chunk.css.map",
+    "static/media/NewMovie.css": "/app-toot-name/static/media/image.b28f07ad.jpg",
+    "static/media/EditMovie.css": "/app-toot-name/static/media/moviesCardsWallpaper.6e55d74b.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.fb5cccab.js",
+    "static/js/2.701f6da9.chunk.js",
+    "static/css/main.496ed9bb.chunk.css",
+    "static/js/main.cf44d7bd.chunk.js"
+  ]
+}
