@@ -5,6 +5,7 @@
   "dependencies": {
     "acorn": "7.1.1",
     "bootstrap-icons": "^1.5.0",
+    "gh-pages": "^3.2.3",
     "minimist": "1.2.3",
     "mutationobserver-shim": "0.3.7",
     "react": "16.14.0",
@@ -19,7 +20,9 @@
     "test": "react-scripts test --verbose=true",
     "eject": "react-scripts eject",
     "lint:styles": "npx stylelint '**/*.css'",
-    "lint": "eslint --no-inline-config --no-error-on-unmatched-pattern -c .eslintrc.json . --ext .js,.jsx"
+    "lint": "eslint --no-inline-config --no-error-on-unmatched-pattern -c .eslintrc.json . --ext .js,.jsx",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -46,5 +49,6 @@
     "stylelint": "13.8.0",
     "stylelint-config-standard": "20.0.0",
     "stylelint-order": "4.1.0"
-  }
+  },
+  "homepage": "https:\/\/username.github.io/app-toot-name"
 }
